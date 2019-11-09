@@ -1,0 +1,66 @@
+IF EXISTS (SELECT name FROM sysobjects WHERE  name = N'vPr_ModuleDZ' AND type = 'V')
+    DROP VIEW vPr_ModuleDZ
+GO
+--
+CREATE VIEW vPr_ModuleDZ
+AS
+SELECT DISTINCT 
+                         TOP (100) PERCENT OioA.AbonentId, vA.AbonNumber, ISNULL(m.LastSurName, 'Собственник помещения') AS LastSurName, vA.CommAddressString, 
+                         OioA.DtBeginOio, OioEv1.DtPlane AS [Уведомление П], OioEv1.DtFact AS [Уведомление Ф], OioEv1.DocSum AS Сумма, 
+                         OioEv1.DocumentNumber AS [Номер документа], dbo.Pr_fnsGetShortFNS('', OioEv8.InspectorId, 1) AS Контролер, OioEv1.DMethodId, 
+                         OioM.DMethodName AS [Метод доставки], OioEv2.DtPlane AS [Извещение на ограничение П], OioEv2.DtFact AS [Извещение на ограничение Ф], 
+                         OioEv3.DtPlane AS [Ограничение П], OioEv3.DtFact AS [Ограничение Ф], OioEv5.DtPlane AS [Извещение на отключение П], 
+                         OioEv5.DtFact AS [Извещение на отключение Ф], OioEv6.DtPlane AS [Отключение П], OioEv6.DtFact AS [Отключение Ф], 
+                         OioEv8.DtPlane AS [Проверка отключения 1 П], OioEv8.DtFact AS [Проверка отключения 1 Ф], OioEv9.DtPlane AS [Проверка отключения 2 П], 
+                         OioEv9.DtFact AS [Проверка отключения 2 Ф], OioEv10.DtPlane AS [Проверка отключения 3 П], OioEv10.DtFact AS [Проверка отключения 3 Ф], 
+                         OioEv11.DtPlane AS [Проверка отключения 4 П], OioEv11.DtFact AS [Проверка отключения 4 Ф], OioEv14.DtPlane AS [Передан в суд П], 
+                         OioEv14.DtFact AS [Передан в суд Ф], OioEv15.DtPlane AS [Решение суда П], OioEv15.DtFact AS [Решение суда Ф], OioEv16.DtPlane AS [Передан в ССП П], 
+                         OioEv16.DtFact AS [Передан в ССП Ф], OioEv17.DtPlane AS [Запрос в ССП П], OioEv17.DtFact AS [Запрос в ССП Ф], 
+                         OioEv18.DtPlane AS [Передан на списание П], OioEv18.DtFact AS [Передан на списание Ф], OioEv19.DtPlane AS [Рейд с СП П], OioEv19.DtFact AS [Рейд с СП Ф],
+                          OioEv20.DtPlane AS [Запрос в суд П], OioEv20.DtFact AS [Запрос в суд Ф], OioEv25.DtPlane AS [Гарантийное соглашение П], 
+                         OioEv25.DtFact AS [Гарантийное соглашение Ф], OioEv26.DtPlane AS [Снятие ограничения П], OioEv26.DtFact AS [Снятие ограничения Ф], 
+                         OioEv27.DtPlane AS [Подключение П], OioEv27.DtFact AS [Подключение Ф], OioA.Notes, dbo.OiOCalcTypes.CalcTypeName, nw.Name AS PowerNetworkName, 
+                         CASE WHEN va.HousingOptionId = 2 THEN 'Многоквартирные дома' ELSE 'Индивидуальные жилые дома' END AS HouseOptions, Counters.CounterType, 
+                         Counters.CounterNumber, cma.CountMonth
+FROM            dbo.Pr_OioCountMonthAbonent AS cma RIGHT OUTER JOIN
+                             (SELECT        PointNumber, PointId, CounterTypeId, DtCountSetup, DtEnd, PerformerId, CounterStatusId, ReplaceReasonId, CounterPlaceId, CounterNumber, 
+                                                         TransFactor, IndicationSetup, DtCountRemove, IndicationRemove, DtCountVerify, DtUpdate, DocumentId, Signs, EnergyTypeId, AbonentId, 
+                                                         CounterType, DtCreate, PeriodNumber, Amper, Voltage, Accuracy, IntervalVerify, VoltageCalculate, OldTypeId, Phases
+                               FROM            dbo.vSchemes_CountersHistory_DtEnd AS schde
+                               WHERE        (DtEnd > GETDATE()) AND (EnergyTypeId = 1)) AS Counters INNER JOIN
+                         dbo.Points AS p INNER JOIN
+                         dbo.PowerNetworks AS pn ON p.PowerNetworkId = pn.PowerNetworkId INNER JOIN
+                         dbo.PowerNetworkOvners AS nw ON pn.PowerNetworkOvnerId = nw.PowerNetworkOvnerId ON Counters.PointId = p.PointId INNER JOIN
+                         dbo.OioAbonents AS OioA INNER JOIN
+                         dbo.OioEvents AS OioEv8 ON OioA.AbonentId = OioEv8.AbonentId AND OioA.DtBeginOio = OioEv8.DtBeginOio AND OioEv8.EventTypeId = 8 INNER JOIN
+                         dbo.OioEvents AS OioEv9 ON OioA.AbonentId = OioEv9.AbonentId AND OioA.DtBeginOio = OioEv9.DtBeginOio AND OioEv9.EventTypeId = 9 INNER JOIN
+                         dbo.OioEvents AS OioEv10 ON OioA.AbonentId = OioEv10.AbonentId AND OioA.DtBeginOio = OioEv10.DtBeginOio AND OioEv10.EventTypeId = 10 INNER JOIN
+                         dbo.OioEvents AS OioEv11 ON OioA.AbonentId = OioEv11.AbonentId AND OioA.DtBeginOio = OioEv11.DtBeginOio AND OioEv11.EventTypeId = 11 INNER JOIN
+                         dbo.OioEvents AS OioEv14 ON OioA.AbonentId = OioEv14.AbonentId AND OioA.DtBeginOio = OioEv14.DtBeginOio AND OioEv14.EventTypeId = 14 INNER JOIN
+                         dbo.OioEvents AS OioEv15 ON OioA.AbonentId = OioEv15.AbonentId AND OioA.DtBeginOio = OioEv15.DtBeginOio AND OioEv15.EventTypeId = 15 INNER JOIN
+                         dbo.OioEvents AS OioEv16 ON OioA.AbonentId = OioEv16.AbonentId AND OioA.DtBeginOio = OioEv16.DtBeginOio AND OioEv16.EventTypeId = 16 INNER JOIN
+                         dbo.OioEvents AS OioEv17 ON OioA.AbonentId = OioEv17.AbonentId AND OioA.DtBeginOio = OioEv17.DtBeginOio AND OioEv17.EventTypeId = 17 INNER JOIN
+                         dbo.OioEvents AS OioEv18 ON OioA.AbonentId = OioEv18.AbonentId AND OioA.DtBeginOio = OioEv18.DtBeginOio AND OioEv18.EventTypeId = 18 INNER JOIN
+                         dbo.OioEvents AS OioEv19 ON OioA.AbonentId = OioEv19.AbonentId AND OioA.DtBeginOio = OioEv19.DtBeginOio AND OioEv19.EventTypeId = 19 INNER JOIN
+                         dbo.OioEvents AS OioEv20 ON OioA.AbonentId = OioEv20.AbonentId AND OioA.DtBeginOio = OioEv20.DtBeginOio AND OioEv20.EventTypeId = 20 INNER JOIN
+                         dbo.OioEvents AS OioEv25 ON OioA.AbonentId = OioEv25.AbonentId AND OioA.DtBeginOio = OioEv25.DtBeginOio AND OioEv25.EventTypeId = 25 INNER JOIN
+                         dbo.OioEvents AS OioEv26 ON OioA.AbonentId = OioEv26.AbonentId AND OioA.DtBeginOio = OioEv26.DtBeginOio AND OioEv26.EventTypeId = 26 INNER JOIN
+                         dbo.OioEvents AS OioEv27 ON OioA.AbonentId = OioEv27.AbonentId AND OioA.DtBeginOio = OioEv27.DtBeginOio AND OioEv27.EventTypeId = 27 ON 
+                         p.AbonentId = OioA.AbonentId ON cma.AbonentId = OioA.AbonentId AND cma.PeriodNumber =
+                             (SELECT        MAX(PeriodNumber)
+                               FROM            dbo.AccountingPeriods
+                               WHERE        (MonthStatus = 2)) LEFT OUTER JOIN
+                         dbo.vMainFamilyMembers AS m ON OioA.AbonentId = m.AbonentId LEFT OUTER JOIN
+                         dbo.OioEvents AS OioEv1 ON OioA.AbonentId = OioEv1.AbonentId AND OioA.DtBeginOio = OioEv1.DtBeginOio AND OioEv1.EventTypeId = 1 LEFT OUTER JOIN
+                         dbo.OiODeliveryMethods AS OioM ON OioEv1.DMethodId = OioM.DMethodId LEFT OUTER JOIN
+                         dbo.OiOCalcTypes ON OioEv1.CalcTypeId = dbo.OiOCalcTypes.CalcTypeId LEFT OUTER JOIN
+                         dbo.OioEvents AS OioEv3 ON OioA.AbonentId = OioEv3.AbonentId AND OioA.DtBeginOio = OioEv3.DtBeginOio AND OioEv3.EventTypeId = 3 LEFT OUTER JOIN
+                         dbo.OioEvents AS OioEv6 ON OioA.AbonentId = OioEv6.AbonentId AND OioA.DtBeginOio = OioEv6.DtBeginOio AND OioEv6.EventTypeId = 6 LEFT OUTER JOIN
+                         dbo.OioEvents AS OioEv2 ON OioA.AbonentId = OioEv2.AbonentId AND OioA.DtBeginOio = OioEv2.DtBeginOio AND OioEv2.EventTypeId = 2 LEFT OUTER JOIN
+                         dbo.OioEvents AS OioEv5 ON OioA.AbonentId = OioEv5.AbonentId AND OioA.DtBeginOio = OioEv5.DtBeginOio AND OioEv5.EventTypeId = 5 LEFT OUTER JOIN
+                         dbo.vAbonents AS vA ON OioA.AbonentId = vA.AbonentId
+WHERE        (OioA.DtEndOio > GETDATE())
+ORDER BY vA.CommAddressString
+--
+GO
+GRANT SELECT ON vPr_ModuleDZ TO KvzWorker
