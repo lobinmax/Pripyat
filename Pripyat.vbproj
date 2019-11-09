@@ -1,0 +1,1435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D1625B5-7623-4983-8F71-D0FE88A3F3B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Pripyat.My.MyApplication</StartupObject>
+    <RootNamespace>Pripyat</RootNamespace>
+    <AssemblyName>Pripyat</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <SupportUrl>http://vk.com/lobin_max</SupportUrl>
+    <ErrorReportUrl>http://vk.com/lobin_max</ErrorReportUrl>
+    <TargetCulture>ru-RU</TargetCulture>
+    <ProductName>ПК Припять</ProductName>
+    <PublisherName>Лобин М.А.</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>156CE2D483469E56A21869E60BD93FC3B2439DD5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Pripyat_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pripyat.icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '55|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\55\</OutputPath>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '55|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\55\</OutputPath>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1Input.4, Version=4.0.20143.9, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\C1.Win.C1Input.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20143.9, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\C1.Win.C1Ribbon.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.SpellChecker.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpellChecker.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FastReport, Version=1.4.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=1.4.18.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=1.4.18.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsHeaderCellCheckBox.vb" />
+    <Compile Include="Modules\mdSchemeAbonentStatus.vb" />
+    <Compile Include="Modules\mdSchemeAddressStreet.vb" />
+    <Compile Include="Modules\mdSchemeGKO.vb" />
+    <Compile Include="Modules\mdSchemeInspectors.vb" />
+    <Compile Include="Modules\mdSchemeJournals.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <DependentUpon>Application.myapp</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Books_GKO.Designer.vb">
+      <DependentUpon>frAddNewPr_Books_GKO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Books_GKO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_CounterSection.Designer.vb">
+      <DependentUpon>frAddNewPr_CounterSection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_CounterSection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_SectionCharges.Designer.vb">
+      <DependentUpon>frAddNewPr_SectionCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_SectionCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frArchivist.Designer.vb">
+      <DependentUpon>frArchivist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frArchivist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frBindings.Designer.vb">
+      <DependentUpon>frBindings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frBindings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frBookFlat.Designer.vb">
+      <DependentUpon>frBookFlat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frBookFlat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frBookGKO.Designer.vb">
+      <DependentUpon>frBookGKO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frBookGKO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frBooks_JudicialArea.Designer.vb">
+      <DependentUpon>frBooks_JudicialArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frBooks_JudicialArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frBook_CopPerformers.Designer.vb">
+      <DependentUpon>frBook_CopPerformers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frBook_CopPerformers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frDefaultWaitForm.Designer.vb">
+      <DependentUpon>frDefaultWaitForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frDefaultWaitForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frDocRegistration.Designer.vb">
+      <DependentUpon>frDocRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frDocRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frLicense.Designer.vb">
+      <DependentUpon>frLicense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frLicense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frMessager.Designer.vb">
+      <DependentUpon>frMessager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frMessager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frOptionsTask.Designer.vb">
+      <DependentUpon>frOptionsTask.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frOptionsTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frRecordEvents.Designer.vb">
+      <DependentUpon>frRecordEvents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frRecordEvents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frReport.Designer.vb">
+      <DependentUpon>frReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frTest.Designer.vb">
+      <DependentUpon>frTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frOpenMonth.Designer.vb">
+      <DependentUpon>frOpenMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frOpenMonth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frExportTo.Designer.vb">
+      <DependentUpon>frExportTo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frExportTo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frListeningControl.Designer.vb">
+      <DependentUpon>frListeningControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frListeningControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frRouter.Designer.vb">
+      <DependentUpon>frRouter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frRouter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Petition.Designer.vb">
+      <DependentUpon>frAddNewPr_Petition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Petition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frChooseMember.Designer.vb">
+      <DependentUpon>frChooseMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frChooseMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Book_CopPerformers.Designer.vb">
+      <DependentUpon>frAddNewPr_Book_CopPerformers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Book_CopPerformers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frBookCopPerformers.Designer.vb">
+      <DependentUpon>frBookCopPerformers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frBookCopPerformers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Books_Judges.Designer.vb">
+      <DependentUpon>frAddNewPr_Books_Judges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Books_Judges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Books_JudicialArea.Designer.vb">
+      <DependentUpon>frAddNewPr_Books_JudicialArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Books_JudicialArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_PetitionDebt.Designer.vb">
+      <DependentUpon>frAddNewPr_PetitionDebt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_PetitionDebt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frBooksJudicialArea.Designer.vb">
+      <DependentUpon>frBooksJudicialArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frBooksJudicialArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frConverterDBFtoTXT.Designer.vb">
+      <DependentUpon>frConverterDBFtoTXT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frConverterDBFtoTXT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frLetterTSO.Designer.vb">
+      <DependentUpon>frLetterTSO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frLetterTSO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Member.Designer.vb">
+      <DependentUpon>frAddNewPr_Member.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Member.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frCalendar.Designer.vb">
+      <DependentUpon>frCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\fr_ViewFamilyMember\clsFamilyRoleList.vb" />
+    <Compile Include="Classes\fr_ViewFamilyMember\clsYesNoConverter.vb" />
+    <Compile Include="Classes\fr_ViewFamilyMember\clsFamilyMember.vb" />
+    <Compile Include="Classes\fr_Abonents\clsGeneralInfo.vb" />
+    <Compile Include="Classes\fr_ViewFamilyMember\clsSexImage.vb" />
+    <Compile Include="Classes\fr_ViewFamilyMember\clsSexList.vb" />
+    <Compile Include="WinForms\frAbonents.Designer.vb">
+      <DependentUpon>frAbonents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAbonents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddresAreal.Designer.vb">
+      <DependentUpon>frAddresAreal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddresAreal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frInfo.Designer.vb">
+      <DependentUpon>frInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frMain.Designer.vb">
+      <DependentUpon>frMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frPayOrdersControl.Designer.vb">
+      <DependentUpon>frPayOrdersControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frPayOrdersControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frSearchAbonent.Designer.vb">
+      <DependentUpon>frSearchAbonent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frSearchAbonent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frViewFamilyMember.Designer.vb">
+      <DependentUpon>frViewFamilyMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frViewFamilyMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frLoginForm.Designer.vb">
+      <DependentUpon>frLoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frLoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Functions.vb" />
+    <Compile Include="Modules\Query\md_Query.vb" />
+    <Compile Include="WinForms\frWaitAskur.Designer.vb">
+      <DependentUpon>frWaitAskur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frWaitAskur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frWaitSimple.Designer.vb">
+      <DependentUpon>frWaitSimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frWaitSimple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAskur.Designer.vb">
+      <DependentUpon>frAskur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAskur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frBookTSO.Designer.vb">
+      <DependentUpon>frBookTSO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frBookTSO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Books_TSO.Designer.vb">
+      <DependentUpon>frAddNewPr_Books_TSO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frAddNewPr_Books_TSO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frSectionODN.Designer.vb">
+      <DependentUpon>frSectionODN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frSectionODN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraReports\.vb\blNotice.Designer.vb">
+      <DependentUpon>blNotice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReports\.vb\blNotice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="WinForms\frAddNewPr_Books_GKO.resx">
+      <DependentUpon>frAddNewPr_Books_GKO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddNewPr_CounterSection.resx">
+      <DependentUpon>frAddNewPr_CounterSection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddNewPr_SectionCharges.resx">
+      <DependentUpon>frAddNewPr_SectionCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frArchivist.resx">
+      <DependentUpon>frArchivist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAskur.az-Cyrl-AZ.resx">
+      <DependentUpon>frAskur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frBindings.resx">
+      <DependentUpon>frBindings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frBookFlat.resx">
+      <DependentUpon>frBookFlat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frBookGKO.resx">
+      <DependentUpon>frBookGKO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frBooks_JudicialArea.resx">
+      <DependentUpon>frBooks_JudicialArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frBook_CopPerformers.resx">
+      <DependentUpon>frBook_CopPerformers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frDefaultWaitForm.resx">
+      <DependentUpon>frDefaultWaitForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frDocRegistration.resx">
+      <DependentUpon>frDocRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frLicense.resx">
+      <DependentUpon>frLicense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frMessager.resx">
+      <DependentUpon>frMessager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frOpenMonth.resx">
+      <DependentUpon>frOpenMonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frListeningControl.resx">
+      <DependentUpon>frListeningControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frOptionsTask.resx">
+      <DependentUpon>frOptionsTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frRecordEvents.resx">
+      <DependentUpon>frRecordEvents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frReport.resx">
+      <DependentUpon>frReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frTest.resx">
+      <DependentUpon>frTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frWaitAskur.resx">
+      <DependentUpon>frWaitAskur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frWaitSimple.resx">
+      <DependentUpon>frWaitSimple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAskur.resx">
+      <DependentUpon>frAskur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frBookTSO.resx">
+      <DependentUpon>frBookTSO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddNewPr_Books_TSO.resx">
+      <DependentUpon>frAddNewPr_Books_TSO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frSectionODN.resx">
+      <DependentUpon>frSectionODN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReports\.vb\blNotice.resx">
+      <DependentUpon>blNotice.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Blanks\ltrCloseContract_1.dot" />
+    <None Include="Blanks\ltrCloseContract_2.dot" />
+    <None Include="Blanks\ltrCloseContract_3.dot" />
+    <None Include="Blanks\Notice.xlsb" />
+    <None Include="Blanks\Workbook.xlsx" />
+    <None Include="Dictionaries\Dictionary.aff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Dictionaries\Dictionary.dic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Manual\Абоненты\Абоненты. Члены семьи.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Manual\Абоненты\Абоненты.ПИР.ЭЭ.Иски.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Manual\Справочники\Справочники.Судебные участки, пристава.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddNewPr_Book_CopPerformers.resx">
+      <DependentUpon>frAddNewPr_Book_CopPerformers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddNewPr_Petition.resx">
+      <DependentUpon>frAddNewPr_Petition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frBookCopPerformers.resx">
+      <DependentUpon>frBookCopPerformers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddNewPr_Books_Judges.resx">
+      <DependentUpon>frAddNewPr_Books_Judges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddNewPr_Books_JudicialArea.resx">
+      <DependentUpon>frAddNewPr_Books_JudicialArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddNewPr_PetitionDebt.resx">
+      <DependentUpon>frAddNewPr_PetitionDebt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frBooksJudicialArea.resx">
+      <DependentUpon>frBooksJudicialArea.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frChooseMember.resx">
+      <DependentUpon>frChooseMember.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frConverterDBFtoTXT.resx">
+      <DependentUpon>frConverterDBFtoTXT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frExportTo.resx">
+      <DependentUpon>frExportTo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frLetterTSO.resx">
+      <DependentUpon>frLetterTSO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddNewPr_Member.resx">
+      <DependentUpon>frAddNewPr_Member.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frCalendar.resx">
+      <DependentUpon>frCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAbonents.resx">
+      <DependentUpon>frAbonents.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frAddresAreal.resx">
+      <DependentUpon>frAddresAreal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frInfo.resx">
+      <DependentUpon>frInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frMain.resx">
+      <DependentUpon>frMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frPayOrdersControl.resx">
+      <DependentUpon>frPayOrdersControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frRouter.resx">
+      <DependentUpon>frRouter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frSearchAbonent.resx">
+      <DependentUpon>frSearchAbonent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frViewFamilyMember.resx">
+      <DependentUpon>frViewFamilyMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frLoginForm.resx">
+      <DependentUpon>frLoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\BindingDataView_CityParts.frx" />
+    <None Include="Reports\BindingDataView_GKO.frx" />
+    <None Include="Reports\BindingDataView_ISU.frx" />
+    <None Include="Reports\BindingDataView_MailDelivery.frx" />
+    <None Include="Reports\BindingDataView_TSO.frx" />
+    <None Include="Reports\EmptyReport.frx" />
+    <None Include="Reports\ISUPointsList.frx" />
+    <None Include="Reports\JournalInArchive_4-03.frx" />
+    <None Include="Reports\JournalInArchive_4-05.frx" />
+    <None Include="Reports\TaskSheetBlank.frx" />
+    <None Include="Resources\Notice.xlsx" />
+    <None Include="Russian.frl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\PetitionBlank.frx" />
+    <None Include="Resources\pripyat_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Del_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abonents_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pripyt_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radiation_88x88.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radiation_88x88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunny_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IP_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logoff_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardFile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aboute_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find_150x150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conn_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connect_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_75x75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Family_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abonent_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_ЭЭ_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_КР_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_ЭЭ_Иски_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_КР_Списание_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_КР_Розыск_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_КР_Рейды_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_КР_Рассрочка_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_КР_Оплаты_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_КР_Запросы_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_КР_Иски_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_ЭЭ_Списание_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_ЭЭ_Розыск_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_ЭЭ_Рейды_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_ЭЭ_Рассрочка_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_ЭЭ_Оплыты_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПИР_ЭЭ_Запросы_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveBD_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Карта_257x169.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail_40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoCompany.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile_40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Telephone_40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Женский.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Мужской.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pasport_96x76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_60x60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_60x60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckMark_60x60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok_70x70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddAbonent_60x60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PayOrder_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateReport_150x90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Pripyat.exe.config">
+      <Visible>False</Visible>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Pripyat.exe.manifest">
+      <Visible>False</Visible>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>ManifestEntryPoint</FileType>
+    </PublishFile>
+    <PublishFile Include="Pripyat.pdb">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gkhworker_250x386.png" />
+    <None Include="Resources\gkoworker_250x334.png" />
+    <None Include="Resources\info_16x161.png" />
+    <None Include="Resources\info_32x321.png" />
+    <None Include="Resources\broom_16x16.png" />
+    <None Include="Resources\broom_32x32.png" />
+    <None Include="Resources\recurrence_16x16.png" />
+    <None Include="Resources\recurrence_32x321.png" />
+    <None Include="Resources\clear_14x14.png" />
+    <None Include="Resources\barrowleft_10x10.png" />
+    <None Include="Resources\barrowright_10x10.png" />
+    <None Include="Resources\Binding.png" />
+    <None Include="Resources\magnet_75x50.png" />
+    <None Include="Resources\clear_32x32.png" />
+    <None Include="Resources\Check_Mark_16x16.png" />
+    <None Include="Resources\report_16x16.png" />
+    <None Include="Resources\report_32x32.png" />
+    <None Include="Resources\boreport_32x32.png" />
+    <None Include="Resources\molnia_16x16.png" />
+    <None Include="Resources\reset_32x32.png" />
+    <None Include="Resources\resetchanges_16x16.png" />
+    <None Include="Resources\add_16x16.png" />
+    <None Include="Resources\reading_16x16.png" />
+    <None Include="Resources\logical_16x16.png" />
+    <None Include="Resources\openboogreen_24x16.png" />
+    <None Include="Resources\openbookred_25x16.png" />
+    <None Include="Resources\calendar_16x16.png" />
+    <None Include="Resources\emailtemplate_16x161.png" />
+    <None Include="Resources\export_32x32.png" />
+    <None Include="Resources\export_32x321.png" />
+    <Content Include="archive_icon.ico" />
+    <Content Include="bookflat.ico" />
+    <None Include="Resources\tso_60x60.png" />
+    <None Include="Resources\lep_128x128.png" />
+    <None Include="Resources\employee_16x161.png" />
+    <None Include="Resources\employee_32x321.png" />
+    <None Include="Resources\recurrence_16x161.png" />
+    <None Include="Resources\recurrence_32x322.png" />
+    <None Include="Resources\hide_16x16.png" />
+    <None Include="Resources\hide_32x322.png" />
+    <None Include="Resources\hide_32x323.png" />
+    <None Include="Resources\show_16x16.png" />
+    <None Include="Resources\show_32x321.png" />
+    <None Include="Resources\boreport2_32x32.png" />
+    <None Include="Resources\boreport2_16x16.png" />
+    <None Include="Resources\boreport2_32x321.png" />
+    <None Include="Resources\report_16x161.png" />
+    <None Include="Resources\boreport2_16x161.png" />
+    <None Include="Resources\boreport2_16x162.png" />
+    <None Include="Resources\04.11.png" />
+    <None Include="Resources\NY_tree.gif" />
+    <None Include="Resources\23.02.png" />
+    <None Include="Resources\DE_LOGO.png" />
+    <Content Include="DE_icon.ico" />
+    <Content Include="meter.ico" />
+    <Content Include="odn.ico" />
+    <Content Include="reports.ico" />
+    <None Include="Resources\home_16x162.png" />
+    <None Include="Resources\exporttoxlsx_32x32.png" />
+    <None Include="Resources\status_16x16.png" />
+    <None Include="Resources\status_16x161.png" />
+    <None Include="Resources\showproduct_16x16.png" />
+    <None Include="Resources\hideproduct_16x16.png" />
+    <None Include="Resources\apply_16x161.png" />
+    <None Include="Resources\status_16x162.png" />
+    <None Include="Resources\status_16x163.png" />
+    <None Include="Resources\status_16x164.png" />
+    <None Include="Resources\usergroup_16x16.png" />
+    <None Include="Resources\router_16x16.png" />
+    <None Include="Resources\controller_16x16.png" />
+    <None Include="Resources\chief_16x16.png" />
+    <None Include="Resources\manager_16x16.png" />
+    <None Include="Resources\database_16x161.png" />
+    <None Include="Resources\database_32x32.png" />
+    <None Include="Resources\database_32x321.png" />
+    <None Include="Resources\database_32x322.png" />
+    <None Include="Resources\budget_16x16.png" />
+    <None Include="Resources\zhkh_16x16.png" />
+    <None Include="Resources\chartsshowlegend_32x32.png" />
+    <None Include="Resources\showtestreport_32x32.png" />
+    <None Include="Resources\showtestreport_32x321.png" />
+    <None Include="Resources\documentmap_32x32.png" />
+    <None Include="Resources\zhkh_32x32.png" />
+    <None Include="Resources\budget_32x32.png" />
+    <None Include="Resources\meter_del_32x32.png" />
+    <None Include="Resources\meter_edit_32x32.png" />
+    <None Include="Resources\meter_add_32x32.png" />
+    <None Include="Resources\apply_16x162.png" />
+    <None Include="Resources\cancel_16x162.png" />
+    <None Include="Resources\cancel_16x163.png" />
+    <None Include="Resources\city_16x16.png" />
+    <None Include="Resources\apply_32x32.png" />
+    <None Include="Resources\apply_16x163.png" />
+    <None Include="Resources\apply_16x164.png" />
+    <None Include="Resources\ld_16x16.gif" />
+    <None Include="Resources\loading_16x16.gif" />
+    <None Include="Resources\unlock16x16.png" />
+    <None Include="Resources\lock_16x16.png" />
+    <None Include="Resources\StatusMonth_16x16.png" />
+    <None Include="Resources\archivist.png" />
+    <None Include="Resources\List_16x16.png" />
+    <None Include="Resources\Bookmark_16x16.png" />
+    <None Include="Resources\Wizard_16x16.png" />
+    <None Include="Resources\AllJournal_16x16.png" />
+    <None Include="Resources\journal_16x16.png" />
+    <None Include="Resources\Book_JournalwPen_16x16.png" />
+    <None Include="Resources\Documents_16x16.png" />
+    <None Include="Resources\hdr_logo_for_notice.png" />
+    <None Include="Resources\excel_16x16.png" />
+    <None Include="Resources\ElecronJournal_16x16.png" />
+    <None Include="Resources\SortClear_16x16.png" />
+    <None Include="Resources\separator_16x16.png" />
+    <Content Include="tso_icon.ico" />
+    <Content Include="vizitka.ico" />
+    <None Include="Resources\tso_32x32.png" />
+    <None Include="Resources\showproduct_32x32.png" />
+    <None Include="Resources\show_32x32.png" />
+    <None Include="Resources\showhidden_32x32.png" />
+    <None Include="Resources\vizitka_16x16.png" />
+    <None Include="Resources\showworktimeonly_32x32.png" />
+    <None Include="Resources\showworktimeonly_16x16.png" />
+    <None Include="Resources\switchtimescalesto_32x322.png" />
+    <None Include="Resources\switchtimescalesto_16x162.png" />
+    <None Include="Resources\switchtimescalesto_32x321.png" />
+    <None Include="Resources\switchtimescalesto_16x161.png" />
+    <None Include="Resources\viewsetting_16x16.png" />
+    <None Include="Resources\switchtimescalesto_16x16.png" />
+    <None Include="Resources\switchtimescalesto_32x32.png" />
+    <None Include="Resources\victory.png" />
+    <None Include="Resources\update1_70x70.png" />
+    <None Include="Resources\update_16x16.png" />
+    <None Include="Resources\TaskView_32x32.png" />
+    <None Include="Resources\TaskView_16x16.png" />
+    <None Include="Resources\UnCheckedAll_32x32.png" />
+    <None Include="Resources\UnCheckedAll_16x16.png" />
+    <None Include="Resources\View_32x32.png" />
+    <None Include="Resources\View_16x16.png" />
+    <None Include="Resources\Task_16x16.png" />
+    <None Include="Resources\Task_32x32.png" />
+    <None Include="Resources\КР_16x16.png" />
+    <None Include="Resources\Wait_50x125.gif" />
+    <None Include="Resources\x-simbol.png" />
+    <None Include="Resources\warning_48x48.png" />
+    <None Include="Resources\zamer_1.png" />
+    <None Include="Resources\Adress_48x48.png" />
+    <None Include="Resources\e_48x48.png" />
+    <None Include="Resources\update_70x70.png" />
+    <None Include="Resources\рейд_60x60.png" />
+    <Content Include="anchor_icon.ico" />
+    <Content Include="gko_icon.ico" />
+    <Content Include="pripyat.icon.ico" />
+    <None Include="Resources\checkbook_50x50.png" />
+    <None Include="Resources\8619149.png" />
+    <None Include="Resources\folder_50x50.png" />
+    <None Include="Resources\book200x200.png" />
+    <None Include="Resources\chart-icon.png" />
+    <None Include="Resources\askur.png" />
+    <None Include="Resources\blank_50x50.png" />
+    <None Include="Resources\blank_32x32.png" />
+    <None Include="Resources\BlankPetition_50x50.png" />
+    <None Include="Resources\RaschetPetition_50x50.png" />
+    <None Include="Resources\city_32x32.png" />
+    <None Include="Resources\home_32x32.png" />
+    <None Include="Resources\chasy_40x40.png" />
+    <None Include="Resources\folders_40x40.png" />
+    <None Include="Resources\emailsend_32x32.png" />
+    <None Include="Resources\Adress_48x481.png" />
+    <None Include="Resources\folderPR_32x32.png" />
+    <None Include="Resources\emailsend_16x16.png" />
+    <None Include="Resources\Disable_16x16.png" />
+    <None Include="Resources\Check_Mark_40x40.png" />
+    <None Include="Resources\result_40x40.png" />
+    <None Include="Resources\Printer_40x40.png" />
+    <None Include="Resources\save_100x100.png" />
+    <None Include="Resources\t-bid_32x32.png" />
+    <None Include="Resources\JudicialArea_32x32.jpg" />
+    <None Include="Resources\JudicialArea_32x32.png" />
+    <None Include="Resources\Logoff_32x32.png" />
+    <None Include="Resources\Court.jpg" />
+    <None Include="Resources\Routes_60x55.png" />
+    <None Include="Resources\Routes_100x100.png" />
+    <None Include="Resources\excel_logo.png" />
+    <None Include="Resources\exportToExcel.gif" />
+    <None Include="Resources\ProgressDarkBlue.png" />
+    <None Include="Resources\Map-icon.png" />
+    <None Include="Resources\FonUpdate.png" />
+    <None Include="Resources\btn_Ok.png" />
+    <None Include="Resources\NewMonth_200x200.png" />
+    <None Include="Resources\Loading_200x140.gif" />
+    <None Include="Resources\PayOrder_16x16.png" />
+    <None Include="Resources\Adress_16x16.png" />
+    <None Include="Resources\chasy_16x16.png" />
+    <None Include="Resources\home_16x16.png" />
+    <None Include="Resources\Map-icon_16x16.png" />
+    <None Include="Resources\blank_16x16.png" />
+    <None Include="Resources\filterclear_32x32.png" />
+    <None Include="Resources\filterclear_16x16.png" />
+    <None Include="Resources\CollapseAll_16x16.png" />
+    <None Include="Resources\CollapseAll_32x32.png" />
+    <None Include="Resources\ExpandAll_16x16.png" />
+    <None Include="Resources\ExpandAll_32x32.png" />
+    <None Include="Resources\CheckedAll_16x16.png" />
+    <None Include="Resources\CheckedAll_32x32.png" />
+    <None Include="Resources\delete_32x321.png" />
+    <None Include="Resources\1296466659_38170075-kopiya-kopiya.jpg" />
+    <None Include="Resources\mapit_16x16.png" />
+    <None Include="Resources\close_16x16.png" />
+    <None Include="Resources\09.05.gif" />
+    <None Include="Resources\hdr_logo_ico.png" />
+    <None Include="Resources\hdr.png" />
+    <None Include="Resources\botask_16x16.png" />
+    <None Include="Resources\print_16x16.png" />
+    <None Include="Resources\map_16x16.png" />
+    <None Include="Resources\clear_16x16.png" />
+    <None Include="Resources\group_16x16.png" />
+    <None Include="Resources\filter_16x16.png" />
+    <None Include="Resources\financial_16x16.png" />
+    <None Include="Resources\assignto_16x16.png" />
+    <None Include="Resources\previous_16x16.png" />
+    <None Include="Resources\next_16x16.png" />
+    <None Include="Resources\boemployee_32x32.png" />
+    <None Include="Resources\recurrence_32x32.png" />
+    <None Include="Resources\masterfilter_16x16.png" />
+    <None Include="Resources\employee_16x16.png" />
+    <None Include="Resources\employee_32x32.png" />
+    <None Include="Resources\home_16x161.png" />
+    <None Include="Resources\home_32x321.png" />
+    <None Include="Resources\group2_16x16.png" />
+    <None Include="Resources\group2_32x32.png" />
+    <None Include="Resources\group2_16x161.png" />
+    <None Include="Resources\group2_32x321.png" />
+    <None Include="Resources\defaultprinternetwork_16x16.png" />
+    <None Include="Resources\defaultprinternetwork_32x32.png" />
+    <None Include="Resources\attach_16x16.png" />
+    <None Include="Resources\attach_32x32.png" />
+    <None Include="Resources\ignoremasterfilter_16x16.png" />
+    <None Include="Resources\ignoremasterfilter_32x32.png" />
+    <None Include="Resources\pull_down.png" />
+    <None Include="Resources\pull_up.png" />
+    <None Include="Resources\colors_16x16.png" />
+    <None Include="Resources\colors_32x32.png" />
+    <None Include="Resources\Events.png" />
+    <None Include="Resources\export_16x16.png" />
+    <None Include="Resources\country_16x16.png" />
+    <None Include="Resources\country_32x32.png" />
+    <None Include="Resources\apply_16x16.png" />
+    <None Include="Resources\cancel_16x16.png" />
+    <None Include="Resources\cancel_16x161.png" />
+    <None Include="Resources\info_16x16.png" />
+    <None Include="Resources\info_32x32.png" />
+    <None Include="Resources\copy_16x16.png" />
+    <None Include="Resources\copy_32x32.png" />
+    <None Include="Resources\none_16x16.png" />
+    <None Include="Resources\none_32x32.png" />
+    <None Include="Resources\none_16x161.png" />
+    <None Include="Resources\none_32x321.png" />
+    <None Include="Resources\currency_16x16.png" />
+    <None Include="Resources\currency_32x32.png" />
+    <None Include="Resources\radiation_16x16.png" />
+    <None Include="Resources\Quasar_16x16.png" />
+    <None Include="Resources\none_16x162.png" />
+    <None Include="Resources\currency_16x161.png" />
+    <None Include="Resources\remove_16x16.png" />
+    <None Include="Resources\remove_32x32.png" />
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\findbyid_32x32.png" />
+    <None Include="Resources\find_32x32.png" />
+    <None Include="Resources\article_32x32.png" />
+    <None Include="Resources\hide_32x32.png" />
+    <None Include="Resources\hide_32x321.png" />
+    <None Include="Resources\hiddentext_32x32.png" />
+    <None Include="Resources\addnewdatasource_16x16.png" />
+    <None Include="Resources\anchor.png" />
+    <None Include="Resources\anchor_log.png" />
+    <None Include="Resources\counter_16x16.png" />
+    <None Include="Resources\counter_32x32.png" />
+    <None Include="Resources\importmap_32x32.png" />
+    <None Include="Resources\jkh_icon.png" />
+    <None Include="Resources\edit_16x161.png" />
+    <None Include="Resources\addfile_16x16.png" />
+    <None Include="Resources\addfile_32x32.png" />
+    <None Include="Resources\addfile_32x321.png" />
+    <None Include="Resources\deletelist_16x16.png" />
+    <None Include="Resources\deletelist_32x32.png" />
+    <None Include="Resources\deletelist_32x321.png" />
+    <None Include="Resources\editfile_16x16.png" />
+    <None Include="Resources\editfile_32x32.png" />
+    <None Include="Resources\editfile_32x321.png" />
+    <None Include="Resources\delete_32x322.png" />
+    <None Include="Resources\backward_16x16.png" />
+    <None Include="Resources\emailtemplate_16x16.png" />
+    <None Include="Resources\phone_16x16.png" />
+    <None Include="Resources\phone3_16x16.png" />
+    <None Include="Resources\phone_16x161.png" />
+    <None Include="Resources\bocontact2_16x16.png" />
+    <Content Include="Resources\RusGidroLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XtraReports\.repx\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reactor_Deploy="0" Reactor_Output="C:\Users\lobin\Documents\Visual Studio 2010\Projects\Pripyat\bin\Debug\Pripyat.exe" Reactor_Configuration="ALL" Reactor_Project="C:\Users\lobin\Documents\.NET Reactor SDK Test Apps\Projects\Pripyat.nrproj" Reactor_Commands="" Reactor_Enabled="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
